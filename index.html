@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div id="main">
     <h1 id="title">Survey Form</h1>
     <div id="form-outer">
         <p id="description">
@@ -18,7 +19,7 @@
                     <label for="name" id="name-label">* Name: </label>
                 </div>
                 <div class="rightTab">
-                    <input type="text" id="name" class="input-field" placeholder="Enter your name">
+                    <input type="text" id="name" class="input-field" placeholder="Enter your name" required>
                 </div>
             </div>
             <div id="rowTab">
@@ -26,7 +27,7 @@
                     <label for="email" id="email-label">* Email: </label>
                 </div>
                 <div class="rightTab">
-                    <input type="email" id="email" class="input-field" placeholder="Enter your Email">
+                    <input type="email" id="email" class="input-field" placeholder="Enter your Email" required>
                 </div>
             </div>
             <div id="rowTab">
@@ -58,9 +59,9 @@
                 </div>
                 <div class="rightTab">
                     <ul>
-                        <li class="radio"><input type="radio" id="definitely" class="userRatings" name="userRatings"><label for="definitely">Definitely</label></li>
-                        <li class="radio"><input type="radio" id="maybe" class="userRatings" name="userRatings"><label for="maybe">Maybe</label></li>
-                        <li class="radio"><input type="radio" id="notsure" class="userRatings" name="userRatings"><label for="notsure">Not sure</label></li>
+                        <li class="radio"><input type="radio" id="definitely" class="userRatings" name="userRatings" value="definitely"><label for="definitely">Definitely</label></li>
+                        <li class="radio"><input type="radio" id="maybe" class="userRatings" name="userRatings" value="maybe"><label for="maybe">Maybe</label></li>
+                        <li class="radio"><input type="radio" id="notsure" class="userRatings" name="userRatings" value="notsure"><label for="notsure">Not sure</label></li>
                     </ul>
                 </div>
             </div>
@@ -109,13 +110,11 @@
             </div>
             <button type="submit" id="submit">Submit</button>
 
-
-
-
-
-
         </form>
     </div>
-    
+</div>
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
